@@ -18,6 +18,14 @@
             it('should return [2, 78] for [4, 66, 6, 44, 7, 78, 8, 68, 2]', function () {
                 expect(FindMinMax.findMinMax([4, 66, 6, 44, 7, 78, 8, 68, 2])).toEqual([2, 78]);
             });
+		
+	       it('should return [21, 83] for [83, 21, 32, 43, 54, 65, 21, 45]', function(){
+                expect(FindMinMax.findMinMax([83, 21, 32, 43, 54, 65, 21, 45])).toEqual([21, 83])
+            });
+
+            it('should return [7, 89] for [7, 8, 89]', function () {
+                expect(FindMinMax.findMinMax([4, 66, 6, 44, 7, 78, 8, 68, 2])).toEqual([2, 78]);
+            });
 
         });
 
