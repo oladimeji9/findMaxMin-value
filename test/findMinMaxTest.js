@@ -18,13 +18,25 @@
             it('should return [2, 78] for [4, 66, 6, 44, 7, 78, 8, 68, 2]', function () {
                 expect(FindMinMax.findMinMax([4, 66, 6, 44, 7, 78, 8, 68, 2])).toEqual([2, 78]);
             });
-		
-	       it('should return [21, 83] for [83, 21, 32, 43, 54, 65, 21, 45]', function(){
-                expect(FindMinMax.findMinMax([83, 21, 32, 43, 54, 65, 21, 45])).toEqual([21, 83])
+
+            it('should return [2, 9] for [7, 8, 9, 6, 2]', function () {
+                expect(FindMinMax.findMinMax([7, 8, 9, 6, 2])).toEqual([2, 9]);
             });
 
-            it('should return [7, 89] for [7, 8, 89]', function () {
-                expect(FindMinMax.findMinMax([4, 66, 6, 44, 7, 78, 8, 68, 2])).toEqual([2, 78]);
+            it('should return [2, 43] for [5,7,2,43,6,2,3]', function () {
+                expect(FindMinMax.findMinMax([5,7,2,43,6,2,3])).toEqual([2, 43]);
+            });
+
+            it('should return [5, 78] for [78, 8, 68, 5]', function () {
+                expect(FindMinMax.findMinMax([78, 8, 68, 5])).toEqual([5, 78]);
+            });
+
+            it('should return [23, 400] for [54,32,900,4000,23,43,800]', function () {
+                expect(FindMinMax.findMinMax([54,32,900,4000,23,43,800])).toEqual([23, 4000]);
+            });
+
+            it('should return [0, 512] for [512, 0]', function () {
+                expect(FindMinMax.findMinMax([78, 8, 68, 5])).toEqual([5, 78]);
             });
 
         });
@@ -33,6 +45,10 @@
 
             it('should return [4] for [4, 4, 4, 4]', function () {
                 expect(FindMinMax.findMinMax([4, 4, 4, 4])).toEqual([4]);
+            });
+
+            it('should return [3] for [3]', function () {
+                expect(FindMinMax.findMinMax([3])).toEqual([3]);
             });
 
         });
